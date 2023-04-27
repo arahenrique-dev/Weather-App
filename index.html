@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="searchBar">
+        <div class="search">
+            <input type="text" class="cityChoose" placeholder="Choose a city">
+            <button class="searchButton"><img class="magnifier" src="images/magnifier.svg"></button>
+        </div>
+    </div>
+    <div class="city">
+        <h1 class="cityName">-</h1>
+        <img class="weatherImage" src="weatherImages/transparent.png">
+    </div>
+    <div class="allCards">
+        <div class="card" id="temperature">
+            <div class="cardTop">
+                <img class="icon" src="images/Temperatura.svg">
+    
+                <span class="title">Temperature</span>
+            </div>
+            <div class="cardContent">
+                <div class="temperature">-</div>
+                <div class="cardBottom">
+                    <span class="minMax">Min:</span>
+                    <span class="minTemp">-</span>
+                    <span> | </span>
+                    <span class="minMax">Max:</span>
+                    <span class="maxTemp">-</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="airconditions">
+            <div class="cardTop">
+                <img class="icon" src="images/air.svg">
+    
+                <span class="title">Air Condition</span>
+            </div>
+            <div class="cardContentAir">
+                <div class="verticalTrasnparent"></div>
+                <div class="contentsAir">
+                    <span class="contentTitle">Feels Like</span>
+                    <span class="contentValue" id="FLValue">-</span>
+                </div>
+                <div class="vertical"></div>
+                <div class="contentsAir">
+                    <span class="contentTitle">Wind</span>
+                    <span class="contentValue" id="windValue">-</span>
+                </div>
+                <div class="vertical"></div>
+                <div class="contentsAir">
+                    <span class="contentTitle">Humidity</span>
+                    <span class="contentValue" id="humidityValue">-</span>
+                </div>
+                <div class="vertical"></div>
+                <div class="contentsAir">
+                    <span class="contentTitle">Pressure</span>
+                    <span class="contentValue" id="pressureValue">-</span>
+                </div>
+                <div class="verticalTrasnparent"></div>
+            </div>
+        </div>
+        <div class="card" id="dayforecast">
+            <div class="cardTop">
+                <img class="icon" src="images/clock.svg">
+    
+                <span class="title">3 Hour forecast</span>
+            </div>
+            <div class="cardContentForecast">
+                <div class="verticalTrasnparent"></div>
+                <div class="contents">
+                    <span class="contentTitle" id="hour0Title">Hour 0</span>
+                    <span class="contentValue" id="hour0Value">-</span>
+                    <img  class="forecastIcons" id="forecastIcon0" src="weatherImages/transparent.png">
+                </div>
+                <div class="vertical"></div>
+                <div class="contents">
+                    <span class="contentTitle" id="hour1Title">Hour1</span>
+                    <span class="contentValue" id="hour1Value">-</span>
+                    <img class="forecastIcons" id="forecastIcon1" src="weatherImages/transparent.png">
+                </div>
+                <div class="vertical"></div>
+                <div class="contents">
+                    <span class="contentTitle" id="hour2Title">Hour 2</span>
+                    <span class="contentValue" id="hour2Value">-</span>
+                    <img class="forecastIcons" id="forecastIcon2" src="weatherImages/transparent.png">
+                </div>
+                <div class="vertical"></div>
+                <div class="contents">
+                    <span class="contentTitle" id="hour3Title">Hour 3</span>
+                    <span class="contentValue" id="hour3Value">-</span>
+                    <img class="forecastIcons" id="forecastIcon3" src="weatherImages/transparent.png">
+                </div>
+                <div class="vertical"></div>
+                <div class="contents">
+                    <span class="contentTitle" id="hour4Title">Hour 4</span>
+                    <span class="contentValue" id="hour4Value">-</span>
+                    <img class="forecastIcons" id="forecastIcon4" src="weatherImages/transparent.png">
+                </div>
+                <div class="vertical"></div>
+                <div class="contents">
+                    <span class="contentTitle" id="hour5Title">Hour 5</span>
+                    <span class="contentValue" id="hour5Value">-</span>
+                    <img class="forecastIcons" id="forecastIcon5" src="weatherImages/transparent.png">
+                </div>
+                <div class="vertical"></div>
+                <div class="contents">
+                    <span class="contentTitle" id="hour6Title">Hour 6</span>
+                    <span class="contentValue" id="hour6Value">-</span>
+                    <img class="forecastIcons" id="forecastIcon6" src="weatherImages/transparent.png">
+                </div>
+                <div class="verticalTransparent"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <span>Data from OpenWeatherAPI</span>
+            <span>Made by Henrique</span>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
